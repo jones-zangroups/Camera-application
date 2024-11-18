@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capture Image</title>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+  
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <h1>Capture Picture</h1>
+    
+    <div class="camera">
+      <video id="video" autoplay></video>
+    </div>
+    
+  
+    <div class="toolbar">
+      
+      <button id="viewImagesButton" class="toolbar-button">
+        <i class="bi bi-image"></i> 
+      </button>
+      
+      
+      <button id="captureButton" class="toolbar-button">
+        <i class="bi bi-camera"></i>
+      </button>
+      
+      <canvas id="canvas" style="display:none;"></canvas>
+      
+      <div id="imageModal" class="modal">
+        <div class="modal-content">
+          <h2>Save this image?</h2>
+          <img id="modalImage" src="" alt="Captured Image">
+          <div class="modal-buttons">
+            <button id="saveImage">Yes</button>
+            <button id="retakeImage">Retake</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+  
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
